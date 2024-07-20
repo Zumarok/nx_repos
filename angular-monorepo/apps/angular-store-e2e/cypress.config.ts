@@ -13,5 +13,8 @@ export default defineConfig({
       ciWebServerCommand: 'nx run angular-store:serve-static',
     }),
     baseUrl: 'http://localhost:4200',
+    videosFolder: '../dist/cypress/apps/angular-store-e2e/videos-changed',
+    screenshotsFolder:
+      '../dist/cypress/apps/angular-store-e2e/screenshots-changed',
   },
 });
