@@ -18,11 +18,27 @@
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/inventory/public"
+            "input": "./libs/shared/assets/src/assets",
+            "output": "./assets"
           }
         ],
-        "styles": ["apps/inventory/src/styles.css"],
-        "scripts": []
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+          "node_modules/aos/dist/aos.css",
+          "node_modules/swiper/swiper-bundle.min.css",
+          "node_modules/glightbox/dist/css/glightbox.min.css",
+          "apps/inventory/src/styles.css"
+        ],
+        "scripts": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+          "node_modules/aos/dist/aos.js",
+          "node_modules/swiper/swiper-bundle.min.js",
+          "node_modules/glightbox/dist/js/glightbox.min.js",
+          "node_modules/imagesloaded/imagesloaded.pkgd.min.js",
+          "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+          "node_modules/@srexi/purecounterjs/dist/purecounter_vanilla.js"
+        ]
       },
       "configurations": {
         "production": {
